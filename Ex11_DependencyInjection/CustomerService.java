@@ -5,7 +5,7 @@ public class CustomerService {
 
     private final CustomerRepository repo;
 
-    // Constructor injection — no 'new CustomerRepositoryImpl()' hidden inside
+    
     public CustomerService(CustomerRepository repo) {
         this.repo = repo;
     }
