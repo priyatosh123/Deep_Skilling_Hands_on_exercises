@@ -3,7 +3,6 @@ package di;
 
 public class DITest {
 
-    // Lightweight mock — no frameworks needed for this demo
     static class MockCustomerRepository implements CustomerRepository {
         @Override
         public String findCustomerById(int id) {
