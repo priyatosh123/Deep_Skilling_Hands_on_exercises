@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NotificationService } from '../../services/notification';
+
+@Component({
+  selector: 'app-notification',
+  standalone: true,
+  imports: [CommonModule],
+  providers: [NotificationService],
+  templateUrl: './notification.html',
+  styleUrl: './notification.css',
+})
+export class NotificationComponent {
+  constructor(private notificationService: NotificationService) {}
+
+  get messages(): string[] {
+    return this.notificationService.getMessages();
+  }
+}

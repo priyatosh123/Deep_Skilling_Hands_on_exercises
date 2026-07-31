@@ -1,0 +1,12 @@
+<p *ngIf="loading$ | async">Loading courses...</p>
+<p *ngIf="error$ | async as err" class="error">{{ err }}</p>
+
+<div *ngIf="!(loading$ | async) && !(error$ | async)">
+  <app-course-card
+    *ngFor="let course of (courses$ | async); trackBy: trackByCourseId"
+    [course]="course"
+    (enrollRequested)="onEnroll($event)">
+  </app-course-card>
+</div>
+
+<p *ngIf="selectedCourseId">Selected course ID: {{ selectedCourseId }}</p>
