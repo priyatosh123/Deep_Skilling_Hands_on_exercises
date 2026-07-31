@@ -1,0 +1,15 @@
+{
+  "java.project.sourcePaths": [
+    "Ex1_Singleton",
+    "Ex2_FactoryMethod",
+    "Ex3_Builder",
+    "Ex4_Adapter",
+    "Ex5_Decorator",
+    "Ex6_Proxy",
+    "Ex7_Observer",
+    "Ex8_Strategy",
+    "Ex9_Command",
+    "Ex10_MVC",
+    "Ex11_DependencyInjection"
+  ]
+}
